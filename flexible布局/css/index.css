@@ -1,0 +1,208 @@
+/* 最大宽度限制 */
+@media screen and (min-width:750px) {
+    html {
+        font-size: 75px!important;
+    }
+}
+/*body 初始样式 */
+body {
+    min-width: 320px;
+    /* max-width: 750px; */
+    width: 10rem;
+    margin: 0 auto;
+    font-family: Arial,Helvetica;
+    background-color: #f2f2f2;
+    font-size: 0.16rem;
+    color: #333;
+    padding-bottom: 1.6rem;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iconfont.woff2') format('woff2'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype'),
+        url('../fonts/iconfont.svg#iconfont') format('svg');
+  }
+  i {
+      font-family: 'iconfont';
+      font-style: normal;
+  }
+/* 顶部搜索框 */
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    width: 10rem;
+    height: 1.173333rem;
+    background-color: #ffc001;
+}
+header .classify {
+    margin: 0.12rem 0.32rem;
+    width: 0.586667rem;
+    height: 0.933333rem;
+    background:url(../images/classify.png);
+    background-size: contain;
+}
+header .search {
+    flex: 1;
+}
+header .search input {
+    margin-top: 0.133333rem;
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-radius: 0.44rem;
+    padding-left: 0.933333rem;
+    color: #666;
+    background-color: #FFF2CC;
+    font-size: 0.373333rem;
+}
+header .login  {
+    width: 1rem;
+    height: 0.933333rem;
+    margin: 0.12rem;
+    line-height: 0.933333rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #fff;
+}
+/* 焦点图 */
+.focus a {
+    display: inline-block;
+}
+.focus img {
+    width: 100%;
+}
+/* 广告图 */
+.advertising {
+    display: flex;
+}
+.advertising a {
+    flex: 1;
+}
+.advertising a img {
+    width: 100%;
+}
+/* 导航 */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav a {
+    flex: 20%;
+    height: 1.893333rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.32rem;
+}
+.nav .nav_img {
+    width: 1.12rem;
+    height: 1.12rem;
+    margin-bottom: 0.066667rem;
+}
+.nav .nav_img img {
+    width: 100%;
+}
+/* 推荐榜单 */
+.goods {
+    margin-left: 0.333333rem;
+    margin-right: 0.333333rem;
+}
+.goods h2 {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.426667rem;
+    letter-spacing: 0.026667rem;
+}
+.goods .goods_list {
+    display: flex;
+    justify-content: space-between;
+}
+.goods .goods_list a {
+    width: 3.013333rem;
+    height: 3.546667rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.goods .goods_list .goods_img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.133333rem auto;
+}
+.goods .goods_list .goods_text {
+    position: relative;
+    width: 100%;
+    height: 1.28rem;
+    text-align: center;
+}
+.goods .goods_list a img {
+    width: 100%;
+}
+.goods .goods_list a:nth-child(1) .goods_text {
+    background: -webkit-linear-gradient(left,#e8b58d,#e0a26d);
+}
+.goods .goods_list a:nth-child(2) .goods_text {
+    background: -webkit-linear-gradient(left,#ffa100,#ff6700);
+}
+.goods .goods_list a:nth-child(3) .goods_text {
+    background: -webkit-linear-gradient(left,#e7b48a,#e0a26d);
+}
+.goods .goods_list .popularity {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%,-50%);
+    width: 1.333333rem;
+    height: 0.453333rem;
+    line-height: 0.4rem;
+    border: 0.026667rem solid #e0a26d;
+    color: #e0a26d;
+    background-color: #fff;
+    border-radius: 0.213333rem;
+    font-size: 0.24rem;
+}
+.goods .goods_list .goods_text p {
+    font-size: 0.373333rem;
+    padding-top: 0.266667rem;
+    color: #fff;
+}
+.goods .goods_list .goods_text .number {
+    display: block;
+    margin-top: 0.066667rem;
+    font-size: 0.32rem;
+    color: rgba(255,255,255,.8);
+}
+/* 底部 */
+footer {
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%);
+    margin-top: 1.6rem;
+    width: 10rem;
+    position: fixed;
+    height: 1.333333rem;
+    background-color: #fff;
+}
+footer a {
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.32rem;
+}
+footer a i {
+    font-size: 0.426667rem;
+    margin-bottom: 0.133333rem;
+}

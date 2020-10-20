@@ -1,0 +1,46 @@
+/* 样式重置 */
+body, ul, ol, li, form, input, textarea, dl, dd, h2, h3, h4, p, a, div,img {
+	margin: 0;
+    padding: 0;
+    /* 针对移动端 */
+    box-sizing: border-box;
+    /* 兼容低版本浏览器 */
+    -webkit-box-sizing: border-box;
+    /* 点击高亮效果清除 */
+    -webkit-tap-highlight-color: transparent;
+    /* -webkit-touch-callout: none; */
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+ul, ol, dl {
+	list-style: none;
+}
+input, textarea {
+	border: none;
+    outline: none;
+    resize: none;
+    /* 清除移动端输入框特有样式 */
+    -webkit-appearance: none;
+}
+img {
+    vertical-align: middle;
+    border: none;
+}
+/* 公共样式 */
+.fl { 
+	float: left;
+}
+.fr { 
+	float: right;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	content: ""; 
+	display: block;
+    clear: both;
+    height: 0;
+}

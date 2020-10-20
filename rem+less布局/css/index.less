@@ -1,0 +1,110 @@
+// 引入外部文件
+// @import "./common.less";
+// 限制最大宽度
+@media screen and (min-width:750px) {
+    html {
+        font-size: 50px!important;
+    }
+}
+// 设置默认样式
+body {
+    min-width: 320px;
+    // width: 15rem 作用等同于 max-width 加 width: 100%
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial,Helvetica;
+    background-color: #f2f2f2;
+    font-size: 12px;
+}
+// 顶部搜索框
+header {
+    // position: relative; 
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFC001;
+    width: 15rem;
+    height: 88 / 50rem;
+    .classify {
+        // position: absolute;
+        // top: 10 / 50rem;
+        // left: 24 / 50rem;
+        width: 44 / 50rem;
+        height: 70 / 50rem;
+        margin: 10 / 50rem 24 / 50rem 8 / 50rem;
+        background: url(../images/classify.png) no-repeat;
+        // background-size: 44 / 50rem 70 / 50rem;
+        background-size: contain;
+    }
+    .login {
+        // position: absolute;
+        // top: 10 / 50rem;
+        // right: 10 / 50rem;
+        width: 75 / 50rem;
+        height: 70 / 50rem;
+        line-height: 70 / 50rem;
+        margin: 10 / 50rem;
+        color: #fff;
+        font-size: 25 / 50rem;
+        text-align: center;
+    }
+    .search {
+        flex: 1;
+        input {
+            width: 100%;
+            height: 66 / 50rem;
+            line-height: 66 / 50rem;
+            margin-top: 10 / 50rem;
+            padding-left: 60 / 50rem;
+            border-radius: 35 / 50rem;
+            background-color: #fff;
+            font-size: 25 / 50rem;
+            color: #666;
+        }
+    }
+}
+// 焦点图
+.focus {
+    width: 100%;
+    a {
+        display: inline-block;
+        img {
+            width: 100%;
+        }
+    }
+}
+// 广告图
+.advertising {
+    display: flex;
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+// 导航
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        display: flex;
+        flex: 20%;
+        font-size: 26 / 50rem;
+        // text-align: center;
+        flex-direction: column;
+        align-items: center;
+        &::before {
+            content: '';
+            width: 84 / 50rem;
+            height: 84 / 50rem;
+            background-color: pink;
+            background: url(../images/nav01.png) no-repeat;
+            background-size: contain;
+            margin: 30 / 50rem 0 5 /50rem;
+        }
+    }
+}

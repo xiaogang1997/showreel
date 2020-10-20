@@ -1,0 +1,21 @@
+div {
+  background-color: hotpink;
+}
+div ul {
+  padding: 0;
+}
+div li {
+  list-style: none;
+}
+div li:first-child {
+  color: yellow;
+}
+div a {
+  text-decoration: none;
+}
+div a span {
+  color: #ffffff;
+}
+div a span:hover {
+  color: red;
+}

@@ -1,0 +1,32 @@
+@color: hotpink;
+@fontSize: 24px;
+// div {
+//     background-color: @color;
+//     font-size: @fontSize;
+//     color: #ffffff;
+// }
+// li {
+//     list-style: none;
+// }
+div {
+    background-color: @color;
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style: none;
+        &:first-child {
+            color: yellow;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    a span {
+        color: #ffffff;
+        &:hover {
+            color: red;
+            
+        }
+    }
+}
