@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>demo列表</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			font-size: 16px;
+		}
+		li {
+			list-style: none;
+		}
+		a {
+			text-decoration: none;
+			color: rgba(0,0,0,.8);
+		}
+		
+		ul {
+			overflow: hidden;
+			width: 800px;
+			margin: 50px auto;
+		}
+		li {
+			float: left;
+			padding: 5px 0;
+		}
+		li a {
+			display: inline-block;
+			width: 180px;
+			height: 35px;
+			margin: 0 10px;
+			line-height: 35px;
+			text-align: center;
+			border-radius: 15px;
+			background-color: rgba(0,0,0,.1);
+		}
+		a:hover {
+			background-color: #ddd;
+		}
+	</style>
 </head>
-
 <body>
-<style>
-        body {
-            display: flex;
-            box-sizing: border-box;
-        }
-        div[class^='box'] {
-            flex: 1;
-        }
-    </style>
-    <div class="box01">
-        <h2>移动端项目</h2>
-        <a href="./bootstrap阿里百秀/index.html">bootstrap阿里百秀</a>
-        <a href="./flexible布局/index.html">flexible布局</a>
-        <a href="./flex布局/index.html">flex布局</a>
-        <a href="./rem+less布局/index.html">rem+less布局</a>
-        <a href="./流式布局/index.html">流式布局</a>
-    </div>
-    <div class="box02"></div>
-    <div class="box03"></div>
+	<ul>
+		<li><a href="http://demo.bokeee.cn/demo_meishitianxia" target="_blank">美食天下demo</a></li>
+		<li><a href="http://demo.bokeee.cn/demo_xiecheng" target="_blank">携程demo</a></li>
+		<li><a href="http://demo.bokeee.cn/demo_xiaochengxu" target="_blank">小程序demo</a></li>
+		<li><a href="http://demo.bokeee.cn/demo_yidongshangcheng" target="_blank">移动商城demo</a></li>
+		<li><a href="http://demo.bokeee.cn/demo_pinyougou" target="_blank">品优购demo</a></li>
+		<li><a href="http://demo.bokeee.cn/demo_m_jd" target="_blank">京东移动端demo</a></li>
+		<li><a href="http://demo.bokeee.cn/demo_bootstrap" target="_blank">Bootstrap框架demo</a></li>
+		<li><a href="http://demo.bokeee.cn/demo_tianmao" target="_blank">天猫demo</a></li>
+		<li><a href="http://demo.bokeee.cn/demo_xiaomi" target="_blank">小米demo</a></li>
+		<li><a href="http://demo.bokeee.cn/demo_bjcywlw" target="_blank">北京餐饮demo</a></li>
+		<li><a href="http://demo.bokeee.cn/vue.js/天气查询.html" target="_blank">vue实例_天气查询</a></li>
+		<li><a href="http://demo.bokeee.cn/vue.js/音乐播放器.html" target="_blank">vue实例_音乐播放器</a></li>
+	</ul>
 </body>
 </html>
